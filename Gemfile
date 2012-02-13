@@ -7,6 +7,7 @@ source 'http://rubygems.org'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'thin'
+gem 'mysql2', '0.2.13'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -63,7 +64,7 @@ end
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 1.0'
 # gem "refinerycms-news",         '~> 1.2'
-# gem 'refinerycms-blog',         '~> 1.6'
+gem 'refinerycms-blog'
 # gem 'refinerycms-page-images',  '~> 1.0'
 
 # Add i18n support (optional, you can remove this if you really want to).

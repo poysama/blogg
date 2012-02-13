@@ -28,6 +28,8 @@ GEM
       activemodel (= 3.0.11)
       activesupport (= 3.0.11)
     activesupport (3.0.11)
+    acts-as-taggable-on (2.2.2)
+      rails (~> 3.0)
     acts_as_indexed (0.7.7)
     arel (2.0.10)
     awesome_nested_set (2.1.2)
@@ -45,6 +47,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
+    filters_spam (0.3)
     friendly_id_globalize3 (3.2.1.6)
       babosa (~> 0.3.0)
     globalize3 (0.1.0)
@@ -58,6 +61,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    mysql2 (0.2.13)
     orm_adapter (0.0.6)
     polyglot (0.3.3)
     rack (1.2.5)
@@ -100,6 +104,11 @@ GEM
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.9)
     refinerycms-base (1.0.9)
+    refinerycms-blog (1.8.0)
+      acts-as-taggable-on
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 1.0.3)
+      seo_meta (~> 1.1.0)
     refinerycms-core (1.0.9)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -162,7 +171,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mysql2 (= 0.2.13)
   refinerycms (~> 1.0.9)
+  refinerycms-blog
   refinerycms-i18n (~> 1.0.0)
   sqlite3-ruby
   thin
