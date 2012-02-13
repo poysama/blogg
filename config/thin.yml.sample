@@ -1,0 +1,7 @@
+servers: 3
+user: rubydev
+group: rubydev
+pid: tmp/pids/test
+port: 1988
+address: 127.0.0.1
+log: log/thin.log
